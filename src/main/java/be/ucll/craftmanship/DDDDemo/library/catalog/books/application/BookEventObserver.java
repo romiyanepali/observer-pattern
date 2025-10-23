@@ -31,7 +31,7 @@ public void onEvent(Event event) {
         case BookRemovedFromCatalogEvent removeEvent ->
             System.out.println("Book removed from catalog with ISBN: " + removeEvent.getIsbn());
         default ->
-            throw new IllegalArgumentException("Unhandled event type: " + event.getClass().getName());
+            System.out.println("event type received that doesn't concern us.");
     }
 }
 }
